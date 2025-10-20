@@ -1,0 +1,40 @@
+.header {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* separa logo e menu */
+  align-items: center; /* centraliza verticalmente */
+  height: 100px;
+  background: var(--nav-dark);
+  padding: 0 40px; /* espaço interno nas laterais */
+}
+
+.logo h1 {
+  font: var(--h3);
+  color: var(--white);
+}
+
+.menu a {
+  color: var(--white);
+  margin-left: 20px; /* separa os links */
+  transition: var(--transition);
+}
+
+.menu a:hover {
+  color: var(--brand-pink);
+}
+
+#botao {
+  padding: 10px 20px;
+  background-color: var(--brand-pink);
+  color: var(--white);
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+#botao:hover {
+  background-color: var(--nav-dark);
+  color: var(--brand-pink);
+}
