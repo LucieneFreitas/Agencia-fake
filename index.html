@@ -28,19 +28,29 @@
   </head>
   <body>
     <!-- ================Navbar Start================ -->
-    
-      <nav class="navbar" aria-label="Navegação principal">
-        <div class="logo">
-          <h3>Agência Fake</h3>
-        </div>
-        <div class="menu">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <nav class="nav-primary" aria-label="Barra superior">
+          <button class="nav-primary__toggle" type="button" aria-label="Abrir menu principal">
+            <span class="nav-primary__icon" aria-hidden="true">☰</span>
+            <span class="nav-primary__label">Menu</span>
+          </button>
+
+          <a class="nav-primary__brand" href="#home" aria-label="Página inicial Agência Fake">
+            Agência Fake
+          </a>
+
+          <a class="nav-primary__cta" href="#contact">Fale Conosco</a>
+        </nav>
+
+        <nav class="nav-secondary" aria-label="Seções do site">
           <a href="#home">Home</a>
           <a href="#about">Sobre Nós</a>
           <a href="#services">Serviços</a>
-          <a id="botao" href="#contact">Fale Conosco</a>
-        </div>
-      </nav>
-    
+          <a href="#contact">Contato</a>
+        </nav>
+      </div>
+    </header>
     <!-- ================Navbar End================ -->
 
 <main class="main">
