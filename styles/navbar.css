@@ -1,23 +1,35 @@
-
-
-.navbar {
-  display: flex;
-  justify-content: space-between; /* separa logo e menu */
-  align-items: center; /* centraliza verticalmente */
-  height: 100px;
+/* ========== Container geral ========== */
+.navbar-container {
   background: var(--nav-dark);
-  padding: 0 40px; /* espaço interno nas laterais */
+  border-bottom: 1px solid var(--stroke-color);
+  font-family: var(--font-family);
+  color: var(--white);
 }
 
-.logo h3 {
-  font: var(--h3);
-  color: var(--logo-h3);
+/* ========== Navbar principal ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
 
+/* Logo */
+.logo h1 {
+  font: var(--h3);
+  color: var(--white);
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .menu a {
   color: var(--white);
-  margin-left: 20px; /* separa os links */
+  font: var(--text);
   transition: var(--transition);
 }
 
@@ -25,15 +37,37 @@
   color: var(--brand-pink);
 }
 
-#botao {
+/* Botão de destaque */
+#btn-contact {
   padding: 10px 20px;
   background-color: var(--brand-pink);
   color: var(--white);
-  border-radius: 5px;
+  border-radius: 6px;
   transition: var(--transition);
 }
 
-#botao:hover {
-  background-color: var(--nav-dark);
+#btn-contact:hover {
+  background-color: var(--white);
   color: var(--brand-pink);
+}
+
+
+
+/* ========== Responsividade ========== */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-secondary {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
