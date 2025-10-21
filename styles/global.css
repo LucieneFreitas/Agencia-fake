@@ -9,15 +9,16 @@
     --nav-dark: #1D4ED8;
     --brand-pink: #E81A93;
     --bg-color: #0F172A;
-    --stroke-color: #1E293B;
+    --logo-h3: #180F4A;
     --text-color-primary: #cfe0f5ff;
     --text-color-secondary: #092268;
     --white: #faf6f6ff;
 
-    --font-family: 'Archivo', sans-serif;
+    --font-family: 'Roboto', sans-serif;
+    --font-h3: 'Lobster', cursive;
     --h1: 800 56px/135% var(--font-family);
     --h2: 800 36px/140% var(--font-family);
-    --h3: 800 24px/140% var(--font-family);
+    --h3: 800 24px/140% var(--font-h3);
     --text-span: 600 14px/145% var(--font-family);
     --text: 400 16px/140% var(--font-family);
     --text-sm: 400 14px/160% var(--font-family);
