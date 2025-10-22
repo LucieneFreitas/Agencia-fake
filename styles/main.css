@@ -1,61 +1,103 @@
-.main {
-  background: gray;
-  padding: 80px 0;
-  min-height: 600px;
-}
-
-/* Alinha os elementos nas extremidades */
-.hero-section {
+/* ===== HERO SECTION ===== */
+.hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  padding: 0 8%;
+  height: 600px;
+  background-color: #f9f9f9;
+  gap: 40px;
 }
 
-/* Texto à esquerda */
+/* ===== TEXTO ===== */
 .hero-content {
   flex: 1;
-  color: white;
-  margin-left: 5%; /* aproxima da borda esquerda */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: #1e293b;
 }
 
-.hero-content h2 {
-  font-size: 2.5rem;
-  line-height: 1.3;
-  font-weight: 700;
+.hero-content h3 {
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  color: #64748b;
+  text-transform: uppercase;
 }
 
-/* Imagem à direita */
-.hero-image-container {
+.hero-content h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-blue);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  max-width: 85%;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* ===== BOTÃO ===== */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--brand-pink);
+  color: var(--white);
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-blue);
+  transform: translateY(-2px);
+  color: var(--white);
+}
+
+/* ===== IMAGEM ===== */
+.hero-image {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%; /* aproxima da borda direita */
+  align-items: center;
 }
 
-.hero-image {
-  width: 100%;
-  max-width: 450px;
+.hero-image img {
+  width: 90%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 20%;
 }
 
-/* Responsivo */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 900px) {
-  .hero-section {
+  .hero {
     flex-direction: column;
     text-align: center;
+    height: auto;
+    padding: 60px 5%;
   }
 
   .hero-content {
-    margin-left: 0;
+    align-items: center;
   }
 
-  .hero-image-container {
-    justify-content: center;
-    margin-right: 0;
+  .hero-content p {
+    max-width: 100%;
+  }
+
+  .btn-primary {
+    align-self: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    margin-top: 30px;
   }
 }
-
-

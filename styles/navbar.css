@@ -3,7 +3,7 @@
   background: var(--nav-dark);
   border-bottom: 1px solid var(--stroke-color);
   font-family: var(--font-family);
-  color: var(--white);
+  
 }
 
 /* ========== Navbar principal ========== */
@@ -17,7 +17,7 @@
 /* Logo */
 .logo h1 {
   font: var(--h3);
-  color: var(--white);
+  color: var(--color-blue);
 }
 
 /* Menu */
@@ -28,7 +28,7 @@
 }
 
 .menu a {
-  color: var(--white);
+  color: var(--color-blue);
   font: var(--text);
   transition: var(--transition);
 }
