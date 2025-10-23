@@ -4,7 +4,7 @@
   border: 2px solid #000;
   margin-left: 5%;
   margin-right: 5%;
-  height: 400px;
+  
   text-align: center;
   padding: 5%;
   width: 90%;
@@ -17,4 +17,18 @@
   font-family: var(--font-h3);
   font-weight: bold;
   color: var(--color-blue);
+}
+
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1%;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
