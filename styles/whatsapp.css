@@ -1,0 +1,18 @@
+/* ===== WHATSAPP FIXO ===== */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;          /* distância da parte inferior */
+  right: 20px;           /* distância da lateral direita */
+  width: 55px;           /* tamanho da imagem */
+  height: 55px;
+  cursor: pointer;
+  z-index: 1000;         /* garante que fique acima de tudo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação UX de hover */
+.whatsapp:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  border-radius: 50%;
+}
